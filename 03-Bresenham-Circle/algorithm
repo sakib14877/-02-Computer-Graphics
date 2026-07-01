@@ -1,0 +1,63 @@
+# Bresenham Circle Drawing Algorithm
+
+## Definition
+
+The Bresenham Circle Drawing Algorithm is an efficient raster graphics algorithm used to draw a circle using only integer calculations.
+
+It avoids floating-point arithmetic, making it faster than traditional methods.
+
+---
+
+## Steps
+
+Input:
+
+- Center (xc, yc)
+- Radius r
+
+Initialize:
+
+x = 0
+
+y = r
+
+Decision Parameter:
+
+d = 3 - 2r
+
+Repeat while x <= y
+
+If d < 0
+
+d = d + 4x + 6
+
+Else
+
+d = d + 4(x - y) + 10
+
+y--
+
+Increment x
+
+Plot all eight symmetric points
+
+---
+
+## Advantages
+
+- Integer calculations only
+- Fast execution
+- High accuracy
+- Widely used in Computer Graphics
+
+---
+
+## Time Complexity
+
+O(r)
+
+---
+
+## Space Complexity
+
+O(1)
