@@ -1,19 +1,15 @@
-# Bresenham Line Drawing Algorithm (OpenGL GLUT)
+Bresenham Line Drawing Algorithm
 
-This project demonstrates the Bresenham Line Drawing Algorithm using OpenGL and GLUT.
+1. Take starting point (x1, y1) and ending point (x2, y2).
+2. Calculate dx and dy.
+3. Determine the direction of x and y.
+4. Calculate the decision parameter.
+5. Plot the current pixel.
+6. Update the decision parameter.
+7. Move to the next pixel.
+8. Repeat until the ending point is reached.
 
-## Features
-- Integer arithmetic only
-- Efficient line drawing
-- GLUT implementation
-- 500 × 500 viewport
-
-## Language
-- C++
-
-## Libraries
-- OpenGL
-- GLUT
-
-## Output
-A red line is drawn between two points using Bresenham's algorithm.
+Advantages:
+- Uses only integer arithmetic.
+- Faster than DDA.
+- Produces accurate raster lines.
